@@ -8,9 +8,9 @@ class ElmFormat < Formula
   head "https://github.com/avh4/elm-format.git"
 
   devel do
-    url "https://github.com/avh4/elm-format/archive/0.2.0-alpha.tar.gz"
-    version "0.2.0-alpha"
-    sha256 "b965ba2a1633524da7fd2bc16eb07b2855c9f9b929024450dbc4256b3a127997"
+    url "https://github.com/avh4/elm-format/archive/0.3.1-alpha.tar.gz"
+    version "0.3.1-alpha"
+    sha256 "6509a4bfb2a292c552b18423be8a3342cdb7d90efa3d1f7841958018c596c9ee"
   end
 
   depends_on "ghc" => :build
@@ -38,6 +38,6 @@ class ElmFormat < Formula
       main = text "Hello, world!"
     EOS
 
-    system bin/"elm-format", testpath/"Hello.elm", "--yes"
+    system bin/"elm-format-0.17", testpath/"Hello.elm", "--yes"
   end
 end
